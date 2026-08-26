@@ -1,0 +1,32 @@
+<section class="hero">
+  <div class="hero-container">
+    <span class="badge">Até aqui nos ajudou o Senhor</span>
+    <h1 class="hero-title">Igreja Evangélica Pentecostal <span class="highlight">Ebenézer</span></h1>
+    <p class="hero-subtitle">Um lugar de fé, comunhão e restauração. Venha fazer parte da nossa família.</p>
+
+    <div class="hero-actions">
+      <a routerLink="/oracao" class="btn btn-primary">Pedir Oração</a>
+      <a routerLink="/sobre" class="btn btn-outline">Conhecer a Igreja</a>
+    </div>
+  </div>
+</section>
+
+<!-- live banner component -->
+<app-live-banner />
+
+<!-- services section -->
+<section class="services-section">
+  <div class="container">
+    <h2 class="section-title">Nossos Cultos</h2>
+
+    <div class="services-grid">
+      @for (item of schedules(); track item.title) {
+      <div class="service-card">
+        <div class="service-time">{{ item.day }} • {{ item.time }}</div>
+        <h3 class="service-name">{{ item.title }}</h3>
+        <p class="service-desc">Venha cultuar conosco e receber uma palavra de Deus para sua vida.</p>
+      </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+<section class="give-section">
+  <div class="container">
+    <h2>Dízimos e Ofertas</h2>
+    <p class="subtitle">"Cada um contribua segundo propôs no seu coração..." - 2 Coríntios 9:7</p>
+
+    <div class="give-grid">
+      <!-- Card PIX -->
+      <div class="give-card highlighted">
+        <span class="badge">Mais Prático</span>
+        <h3>Contribuição via PIX</h3>
+        <p>Utilize a chave CNPJ abaixo para realizar sua contribuição diretamente pelo app do seu banco:</p>
+
+        <div class="pix-box">
+          <code>{{ pixKey }}</code>
+          <button class="btn btn-primary" (click)="copyPix()">
+            {{ copied() ? 'Copiado!' : 'Copiar Chave' }}
+          </button>
+        </div>
+      </div>
+
+      <!-- Card Dados Bancários -->
+      <!-- <div class="give-card">
+        <h3>Transferência Bancária</h3>
+        <p>Igreja Evangélica Pentecostal Ebenézer</p>
+        
+        <ul class="bank-details">
+          <li><strong>Banco:</strong> Banco do Brasil (001)</li>
+          <li><strong>Agência:</strong> 0000-0</li>
+          <li><strong>Conta Corrente:</strong> 00000-0</li>
+          <li><strong>CNPJ:</strong> {{ pixKey }}</li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+</section>

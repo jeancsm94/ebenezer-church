@@ -1,0 +1,19 @@
+@if (live(); as currentVideo) {
+<section class="live-section">
+    <div class="container">
+        <div class="live-header">
+            <span class="live-badge">
+                <span class="pulse-dot"></span> AO VIVO
+            </span>
+            <h2>{{ currentVideo.title }}</h2>
+        </div>
+
+        <div class="video-container">
+            <iframe [src]="getEmbedUrl(currentVideo.id)" title="Transmissão ao Vivo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+}

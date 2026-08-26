@@ -1,0 +1,85 @@
+/* DESIGN SYSTEM - IGREJA EBENÉZER */
+
+:root {
+  /* Cores — escala neutra ancorada em #1c1c1c */
+  --color-primary: #FF6D00;
+  --color-primary-hover: #E65100;
+  --color-bg-main: #1C1C1C;
+  --color-bg-surface: #262626;
+  --color-bg-surface-hover: #303030;
+  --color-bg-brand: #171717;
+  --color-border-brand: #2B2B2B;
+  --color-border: #363636;
+
+  /* Textos */
+  --color-text-primary: #F5F5F4;
+  --color-text-secondary: #A3A39E;
+  --color-text-muted: #82827C;
+  
+  /* Layout */
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+:root[data-theme="light"] {
+  --color-bg-main: #FAFAF9;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-surface-hover: #F0F0EE;
+  --color-bg-brand: #FFFFFF;
+  --color-border-brand: #E5E5E2;
+  --color-border: #DEDEDA;
+
+  --color-text-primary: #1C1C1C;
+  --color-text-secondary: #5C5C58;
+  --color-text-muted: #78786F;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+}
+
+/* Botões */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  text-decoration: none;
+
+  &-primary {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: var(--color-primary-hover);
+    }
+  }
+
+  &-outline {
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+
+    &:hover {
+      background-color: var(--color-bg-surface-hover);
+    }
+  }
+}
