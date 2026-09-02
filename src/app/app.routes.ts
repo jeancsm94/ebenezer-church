@@ -9,10 +9,10 @@ export const routes: Routes = [
     path: 'sobre',
     loadComponent: () => import('./pages/about/about.component').then(m => m.AboutComponent)
   },
-  {
-    path: 'oracao',
-    loadComponent: () => import('./pages/prayer/prayer.component').then(m => m.PrayerComponent)
-  },
+  // {
+  //   path: 'oracao',
+  //   loadComponent: () => import('./pages/prayer/prayer.component').then(m => m.PrayerComponent)
+  // },
   {
     path: 'contribuir',
     loadComponent: () => import('./pages/give/give.component').then(m => m.GiveComponent)
