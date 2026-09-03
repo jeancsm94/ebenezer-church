@@ -43,3 +43,7 @@ Thumbs.db
 
 # Environment variables
 .env
+
+# Agent skills shortcut (OS-specific: junction on Windows, symlink on macOS/Linux).
+# Canonical skills live in .claude/skills; recreate this locally, do not commit it.
+.agents/skills
