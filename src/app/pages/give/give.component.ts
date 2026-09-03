@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-give',
@@ -8,7 +9,7 @@ import { Component, signal } from '@angular/core';
   styleUrl: './give.component.scss'
 })
 export class GiveComponent {
-  pixKey = '28.289.522/0001-74'; // CNPJ ou Chave PIX da Igreja
+  pixKey = environment.pixKey;
   copied = signal(false);
 
   copyPix() {

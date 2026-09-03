@@ -65,6 +65,22 @@
     margin-bottom: 0.4rem;
   }
 
+  .footer-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    a {
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
   &-bottom {
     max-width: 1200px;
     margin: 0 auto;

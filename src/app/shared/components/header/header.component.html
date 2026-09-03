@@ -1,15 +1,20 @@
 <header class="header">
   <div class="header-container">
     <a routerLink="/" class="logo">
-      <img [src]="themeService.theme() === 'dark' ? 'assets/logo_black.svg' : 'assets/logo_white.svg'" alt="Igreja Ebenézer" class="logo-img" />
+      <img [src]="themeService.theme() === 'dark' ? 'assets/logo-black.webp' : 'assets/logo-white.webp'" alt="Igreja Ebenézer" class="logo-img" />
       <span class="logo-text">
         <span class="logo-ebenezer">Ebenézer</span>
         <span class="logo-sub">Pedra de Ajuda</span>
       </span>
     </a>
 
-    <button class="menu-toggle" (click)="toggleMenu()" aria-label="Abrir menu">
-      ☰
+    <button
+      class="menu-toggle"
+      (click)="toggleMenu()"
+      [attr.aria-label]="isMenuOpen() ? 'Fechar menu' : 'Abrir menu'"
+      [attr.aria-expanded]="isMenuOpen()"
+    >
+      {{ isMenuOpen() ? '✕' : '☰' }}
     </button>
 
     <nav class="nav" [class.open]="isMenuOpen()">

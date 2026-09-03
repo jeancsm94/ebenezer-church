@@ -1,14 +1,14 @@
 <section class="events-section">
   <div class="container">
     <span class="badge">Agenda</span>
-    <h2>Próximos Eventos</h2>
+    <h1>Próximos Eventos</h1>
     <p class="subtitle">Fique por dentro do que está acontecendo na nossa igreja</p>
 
     <div class="events-grid">
       @for (event of events(); track event.id) {
         <div class="card">
           <span class="event-date">{{ event.date | date:'dd/MM/yyyy' }} · {{ event.time }}</span>
-          <h3>{{ event.title }}</h3>
+          <h2>{{ event.title }}</h2>
           <p class="event-location">📍 {{ event.location }}</p>
           <p class="event-description">{{ event.description }}</p>
         </div>
