@@ -8,7 +8,7 @@ import { Component, signal } from '@angular/core';
   styleUrl: './give.component.scss'
 })
 export class GiveComponent {
-  pixKey = '[EMAIL_ADDRESS]'; // CNPJ ou Chave PIX da Igreja
+  pixKey = '28.289.522/0001-74'; // CNPJ ou Chave PIX da Igreja
   copied = signal(false);
 
   copyPix() {
