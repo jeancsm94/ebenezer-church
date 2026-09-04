@@ -1,9 +1,3 @@
-export interface ServiceSchedule {
-  day: string;
-  time: string;
-  title: string;
-}
-
 export interface ChurchEvent {
   id: string;
   title: string;

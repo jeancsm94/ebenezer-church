@@ -14,19 +14,25 @@
 <!-- live banner component -->
 <app-live-banner />
 
-<!-- services section -->
-<section class="services-section">
+<!-- events section -->
+<section class="events-section">
   <div class="container">
-    <h2 class="section-title">Nossos Cultos</h2>
+    <h2 class="section-title">Próximos Eventos</h2>
 
-    <div class="services-grid">
-      @for (item of schedules(); track item.title) {
-      <div class="service-card">
-        <div class="service-time">{{ item.day }} • {{ item.time }}</div>
-        <h3 class="service-name">{{ item.title }}</h3>
-        <p class="service-desc">Venha cultuar conosco e receber uma palavra de Deus para sua vida.</p>
+    <div class="events-grid">
+      @for (event of upcomingEvents(); track event.id) {
+      <div class="event-card">
+        <div class="event-date">{{ event.date | date:'dd/MM/yyyy' }} • {{ event.time }}</div>
+        <h3 class="event-name">{{ event.title }}</h3>
+        <p class="event-desc">{{ event.description }}</p>
       </div>
+      } @empty {
+      <p class="empty-message">Nenhum evento agendado no momento.</p>
       }
+    </div>
+
+    <div class="section-actions">
+      <a routerLink="/eventos" class="btn btn-outline">Ver todos os eventos</a>
     </div>
   </div>
 </section>
