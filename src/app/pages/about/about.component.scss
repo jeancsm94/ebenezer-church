@@ -78,6 +78,12 @@
         }
     }
 
+    .route-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
     .directions-link {
         display: inline-block;
         color: var(--color-primary);
