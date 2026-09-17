@@ -2,6 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { EventsService } from '../../core/services/events.service';
+import { ThemeService } from '../../core/services/theme.service';
 import { LiveBannerComponent } from './components/live-banner/live-banner.component';
 
 @Component({
@@ -13,6 +14,7 @@ import { LiveBannerComponent } from './components/live-banner/live-banner.compon
 })
 export class HomeComponent {
   private eventsService = inject(EventsService);
+  themeService = inject(ThemeService);
   private today = new Date().toISOString().slice(0, 10);
 
   upcomingEvents = computed(() =>
