@@ -155,14 +155,28 @@
   }
 
   .directions-link {
-    display: inline-block;
-    color: var(--color-primary);
-    font-weight: 600;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
 
-    &:hover {
-      text-decoration: underline;
+    &:hover,
+    &:focus-visible {
+      border-color: var(--color-border);
     }
+
+    &:hover .directions-icon,
+    &:focus-visible .directions-icon {
+      transform: scale(1.15);
+    }
+  }
+
+  .directions-icon {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.2s;
   }
 
   .section-actions {
