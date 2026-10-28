@@ -6,61 +6,69 @@ import { ChurchEvent } from '../models/church.model';
 })
 export class EventsService {
   events = signal<ChurchEvent[]>([
-    {
-      id: '1',
-      title: 'Dicipulado Online',
-      date: '2026-09-09',
-      time: '19:00h',
-      location: '-',
-      description: 'Dicipulado Online.'
-    },
-    {
-      id: '2',
-      title: 'Culto Aniversário do Círculo de Oração',
-      date: '2026-09-12',
-      time: '19:30h',
-      location: 'Templo Sede - Igreja Ebenézer',
-      description: 'Congresso do Círculo de Oração.'
-    },
-    {
-      id: '3',
-      title: 'Dicipulado Online',
-      date: '2026-09-16',
-      time: '19:00h',
-      location: '-',
-      description: 'Dicipulado Online.'    
-    },
-    {
-      id: '4',
-      title: 'Culto Gaúcho',
-      date: '2026-09-20',
-      time: '17:00h',
-      location: 'Templo Sede - Igreja Ebenézer',
-      description: 'Culto Gaúcho.'
-    },
-    {
-      id: '5',
-      title: 'Culto Doméstico',
-      date: '2026-09-23',
-      time: '19:00h',
-      location: '-',
-      description: 'Culto Doméstico.'
-    },
-    {
-      id: '6',
-      title: 'Culto Evangelismo',
-      date: '2026-09-27',
-      time: '9:30h',
-      location: '-',
-      description: 'Culto Evangelismo.'
-    },
-    {
-      id: '7',
-      title: 'Dicipulado Online',
-      date: '2026-09-30',
-      time: '19:00h',
-      location: '-',
-      description: 'Dicipulado Online.'
-    },
-  ]);
+  {
+    id: '1',
+    title: 'Culto de Obreiros',
+    date: '2026-11-01',
+    time: '18:00h',
+    location: 'Rua Carlos Finckler, 100, centro, Vale Real, RS',
+    description: 'Culto de Obreiros na Igreja Evangelica Pentecostal Ebenezer.'
+  },
+  {
+    id: '2',
+    title: 'Culto de Ceia',
+    date: '2026-11-08',
+    time: '18:00h',
+    location: 'Sede Vale Real',
+    description: 'Culto de Ceia na Sede Vale Real.'
+  },
+  {
+    id: '3',
+    title: 'Culto Público',
+    date: '2026-11-11',
+    time: '19:00h',
+    location: 'Rua Carlos Finckler, 100, centro, Vale Real, RS',
+    description: 'Culto Público.'
+  },
+  {
+    id: '4',
+    title: 'Culto do 10º Aniversário da Igreja Ebenezer - Dia 1',
+    date: '2026-11-14',
+    time: '19:30h',
+    location: 'Sede Vale Real',
+    description: 'Culto do 10º Aniversário da Igreja Ebenezer. Dirigente: Pra Maria Olita / Pregador: Ap Lucimari Ribeiro. Tema: "Levantai os vossos olhos, e vede os campos, que já estão brancos para a ceifa" (João 4:35b).'
+  },
+  {
+    id: '5',
+    title: 'Culto do 10º Aniversário da Igreja Ebenezer - Dia 2',
+    date: '2026-11-15',
+    time: '09:00h',
+    location: 'Sede Vale Real',
+    description: 'Culto do 10º Aniversário da Igreja Ebenezer. Dirigente: Pr Carlos Alberto / Pregador: Ap Cesar Martins. Tema: "Levantai os vossos olhos, e vede os campos, que já estão brancos para a ceifa" (João 4:35b).'
+  },
+  {
+    id: '6',
+    title: 'Culto Público',
+    date: '2026-11-22',
+    time: '18:00h',
+    location: 'Rua Carlos Finckler, 100, centro, Vale Real, RS',
+    description: 'Culto Público.'
+  },
+  {
+    id: '7',
+    title: 'Culto Público',
+    date: '2026-11-25',
+    time: '19:00h',
+    location: 'Arroio do Ouro - Casa irmã Silvana',
+    description: 'Culto Público realizado em Arroio do Ouro na casa da irmã Silvana.'
+  },
+  {
+    id: '8',
+    title: 'Culto Público',
+    date: '2026-11-29',
+    time: '18:00h',
+    location: 'Rua Carlos Finckler, 100, centro, Vale Real, RS',
+    description: 'Culto Público.'
+  }
+]);
 }

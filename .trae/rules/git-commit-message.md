@@ -3,5 +3,5 @@ alwaysApply: true
 scene: git_message
 ---
 
-Write your rules here to customize the style of AI-generated commit messages.
-Write message commit in portuguese brazilian
+1. Write your rules here to customize the style of AI-generated commit messages.
+2. Write message commit in portuguese brazilian
