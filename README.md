@@ -1,7 +1,7 @@
 # Igreja Ebenézer — Pedra de Ajuda
 
 Site institucional da Igreja Evangélica Pentecostal Ebenézer, construído em Angular 18 com Server-Side Rendering (SSR) e prerender.
-
+Link: https://ebenezermpa.com/
 ## Funcionalidades
 
 - **Início** — hero de apresentação, agenda de cultos e banner de transmissão ao vivo (busca automaticamente no YouTube se o canal está transmitindo no momento).
