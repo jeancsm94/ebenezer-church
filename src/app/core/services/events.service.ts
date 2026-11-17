@@ -50,7 +50,7 @@ export class EventsService {
     id: '6',
     title: 'Culto Público',
     date: '2026-11-22',
-    time: '18:00h',
+    time: '19:00h',
     location: 'Rua Carlos Finckler, 100, centro, Vale Real, RS',
     description: 'Culto Público.'
   },
@@ -66,7 +66,7 @@ export class EventsService {
     id: '8',
     title: 'Culto Público',
     date: '2026-11-29',
-    time: '18:00h',
+    time: '19:00h',
     location: 'Rua Carlos Finckler, 100, centro, Vale Real, RS',
     description: 'Culto Público.'
   }
