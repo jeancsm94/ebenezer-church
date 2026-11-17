@@ -1,0 +1,9 @@
+@if (isOpen()) {
+  <div class="overlay" (click)="close()">
+    <div class="dialog" role="dialog" aria-modal="true" aria-label="Novo horário de culto" (click)="$event.stopPropagation()">
+      <button type="button" class="close-btn" aria-label="Fechar aviso" (click)="close()">&times;</button>
+      <img src="assets/anuncio_mudanca_horario_culto.png" alt="Horários de culto: Domingo às 19h, Rua Carlos Finkler, nº 100, Centro – Vale Real">
+      <button type="button" class="btn btn-primary confirm-btn" (click)="close()">Entendi</button>
+    </div>
+  </div>
+}

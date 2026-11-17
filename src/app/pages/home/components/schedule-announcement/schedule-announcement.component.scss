@@ -1,0 +1,58 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  animation: fade-in 0.25s ease-out;
+}
+
+.dialog {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  max-height: 100%;
+  overflow: hidden;
+  padding-bottom: 16px;
+  background: var(--color-bg-surface);
+  border-radius: var(--radius-lg);
+
+  img {
+    display: block;
+    width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 16px 16px 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -4,11 +4,12 @@ import { DatePipe } from '@angular/common';
 import { EventsService } from '../../core/services/events.service';
 import { ThemeService } from '../../core/services/theme.service';
 import { LiveBannerComponent } from './components/live-banner/live-banner.component';
+import { ScheduleAnnouncementComponent } from './components/schedule-announcement/schedule-announcement.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, DatePipe, LiveBannerComponent],
+  imports: [RouterLink, DatePipe, LiveBannerComponent, ScheduleAnnouncementComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
